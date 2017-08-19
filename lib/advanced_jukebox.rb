@@ -46,7 +46,7 @@ def play(my_songs)
   my_songs.each do |key, value|
     binding.pry
     if user_input == key
-      system "open #{value}"
+      system open value
     else
       puts "Invalid input, please try again"
     end
